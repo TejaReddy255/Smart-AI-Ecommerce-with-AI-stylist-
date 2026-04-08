@@ -352,7 +352,7 @@ def render_product_detail_page():
                     "image": rec_img_path
                 })
 
-            for it in items_to_add:z
+            for it in items_to_add:
                 cart.add_to_cart(st.session_state.cart, it)
             st.success(f"🎉 Added complete outfit ({len(items_to_add)} items) to your cart!")
     else:
